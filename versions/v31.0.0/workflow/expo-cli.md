@@ -61,3 +61,31 @@ Commands:
   webhooks:clear [options] [project-dir]          Clear a webhook associated with this project.
   whoami|w [options]                              Checks with the server and then says who you are logged in as
 ```
+
+To view the options for each command, run the command with the `--help` flag; for example:
+
+```
+➜ expo start --help
+
+Usage: start|r [options] [project-dir]
+
+Starts or restarts a local server for your app and gives you a URL to it
+
+Options:
+  -s, --send-to [dest]  A phone number or e-mail address to send a link to
+  -c, --clear           Clear the React Native packager cache
+  --max-workers [num]   Maximum number of tasks to allow Metro to spawn.
+  -a, --android         Opens your app in Expo on a connected Android device
+  -i, --ios             Opens your app in Expo in a currently running iOS simulator on your computer
+  -m, --host [mode]     lan (default), tunnel, localhost. Type of host to use. "tunnel" allows you to view your link on other networks
+  --tunnel              Same as --host tunnel
+  --lan                 Same as --host lan
+  --localhost           Same as --host localhost
+  --dev                 Turns dev flag on
+  --no-dev              Turns dev flag off
+  --minify              Turns minify flag on
+  --no-minify           Turns minify flag off
+  --offline             Allows this command to run while offline
+  --config [file]       Specify a path to app.json
+  -h, --help            output usage information
+```
